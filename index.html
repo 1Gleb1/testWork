@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="./src/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- burger -->
+      <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="burger-menu">
+        <nav>
+          <ul>
+            <a href="#about" class="menu-content__item">О клинике</a>
+            <a href="#services" class="menu-content__item">Услуги</a>
+            <a href="#specialists" class="menu-content__item">Специалисты</a>
+            <a href="#prices" class="menu-content__item">Цены</a>
+            <a href="#contacts" class="menu-content__item">Контакты</a>
+          </ul>
+          <button class="btn btn_white open-popup">Записаться на прием</button>
+        </nav>
+      </div>
+      <!--  -->
+      <div class="header__left">
+        <div class="logo">LOGO</div>
+        <address class="address__left">
+          <img src="./src/img/marker.svg" alt="marker" />
+          <div>
+            <div class="city">Ростов-на-Дону</div>
+            <div class="street">ул. Ленина, 2Б</div>
+          </div>
+        </address>
+      </div>
+      <div class="header__right">
+        <address class="address__right">
+          <img
+            src="./src/img/whatsapp 1.png"
+            alt="whatsapp"
+            class="phone__img"
+          />
+          <p class="header__phone">+7(863) 000 00 00</p>
+          <div class="city city_right">Ростов-на-Дону</div>
+        </address>
+        <button class="signUp btn btn_header open-popup">
+          Записаться на прием
+        </button>
+      </div>
+    </header>
+    <nav class="menu">
+      <div class="menu-content">
+        <a href="#about" class="menu-content__item">О клинике</a>
+        <a href="#services" class="menu-content__item">Услуги</a>
+        <a href="#specialists" class="menu-content__item">Специалисты</a>
+        <a href="#prices" class="menu-content__item">Цены</a>
+        <a href="#contacts" class="menu-content__item">Контакты</a>
+      </div>
+    </nav>
+
+    <!-- popup -->
+    <div class="popup__bg">
+      <form class="popup" method="GET" action="/src/php/process.php">
+        <!-- <label for="text">Введите текст:</label>
+        <input type="text" id="text" name="text" required />
+        <input type="submit" value="Отправить" /> -->
+        <label>
+          <input type="text" name="name" />
+          <div class="label__text">Ваше имя</div>
+        </label>
+        <label>
+          <input type="text" name="email" />
+          <div class="label__text">Ваша почта</div>
+        </label>
+        <label>
+          <textarea name="message"></textarea>
+          <div class="label__text">Ваше сообщение</div>
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
+      <div class="popup-placeholder"></div>
+    </div>
+    <!--  -->
+
+    <main>
+      <div class="about">
+        <div class="about__left">
+          <h2>Многопрофильная клиника для детей и взрослых</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <div class="about__right">
+          <img src="./src/img/room.png" alt="room" class="about__img" />
+        </div>
+      </div>
+
+      <div class="check-up">
+        <div class="card">
+          <div class="card__left">
+            <div class="card_h-2">Check-UP</div>
+            <div class="card_h-3">для мужчин</div>
+            <ul class="list">
+              <li class="list__item">Гормональный скрининг</li>
+              <li class="list__item">Тестостерон</li>
+              <li class="list__item">Свободный тестостерон</li>
+              <li class="list__item">Глобулин, связывающий половые гормоны</li>
+            </ul>
+            <div class="price">
+              <p class="price__disc">Всего 2800₽</p>
+              <p class="price__full">3500</p>
+            </div>
+            <div class="card__btn">
+              <div class="btn open-popup">Записаться</div>
+              <div class="btn btn_outline">Подробнее</div>
+            </div>
+          </div>
+          <div class="card__right">
+            <img
+              src="./src/img/doctor-working-table 1.png"
+              alt="table"
+              class="card__img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__left">
+          <div class="logo logo_white">LOGO</div>
+          <nav class="footer-content__menu">
+            <a href="#about" class="footer-content__item">О клинике</a>
+            <a href="#services" class="footer-content__item">Услуги</a>
+            <a href="#specialists" class="footer-content__item">Специалисты</a>
+            <a href="#prices" class="footer-content__item">Цены</a>
+            <a href="#contacts" class="footer-content__item">Контакты</a>
+          </nav>
+        </div>
+        <address class="contacts">
+          <a href="#inst" class="contact__link">
+            <img src="./src/img/inst.png" alt="int" class="contact__logo" />
+          </a>
+          <a href="#whats" class="contact__link">
+            <img
+              src="./src/img/whats.png"
+              alt="whatsapp"
+              class="contact__logo"
+            />
+          </a>
+          <a href="#telega" class="contact__link">
+            <img src="./src/img/tg.png" alt="tg" class="contact__logo" />
+          </a>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
